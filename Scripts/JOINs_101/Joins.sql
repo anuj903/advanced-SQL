@@ -22,7 +22,10 @@ SELECT * FROM orders;
 
 --get all customers along with their orders but only for customers who have placed orders
 
-SELECT c.id, c.first_name, o.order_id, o.sales 
+SELECT  c.id, 
+        c.first_name, 
+        o.order_id, 
+        o.sales 
 FROM customers c 
 INNER JOIN  orders o
 ON c.id = o.customer_id;
